@@ -1,0 +1,18 @@
+﻿@model IEnumerable<MvcApplication1.Models.User>
+@using EfSearchModel.Extensions;
+@using EfSearchModel.Model;
+@{
+    ViewBag.Title = "List";
+}
+<form action="" method="post">
+姓名：@Html.TextBox("Name").ForSearch(QueryMethod.Like)   
+Email：@Html.TextBox("Email").ForSearch(QueryMethod.Equal)<br />
+Id: @Html.TextBox("Id").ForSearch(QueryMethod.Equal)
+生日: @Html.TextBox("Birthday").ForSearch(QueryMethod.Equal)<br />
+<input type="submit" value="查询" />
+</form>
+@{
+    var grid = new WebGrid(Model);
+    
+    @grid.GetHtml();
+}

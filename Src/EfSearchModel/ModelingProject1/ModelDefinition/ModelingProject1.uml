@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="fa2520a6-7fbb-4bc4-a780-d8eebecaecb4"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="805e0328-535f-4f75-ab2e-c197e7727e39"
+        name="ConditionItem"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="94c4baff-7f0e-475e-b194-90c3d3464432"
+            name="Field"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="40c3afe6-37bb-4c58-91ee-f02d76816a17"
+                LastKnownName="string"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8999aa64-5db2-4089-b2bb-1d77fa9bcbe3"
+            name="Method"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a9b6a3f5-5256-41e0-af29-fa55733af467"
+                LastKnownName="QueryMethod"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b7120ad4-1104-48d3-927c-f00013bbc303"
+            name="Value"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a1c9af44-bdac-4884-b739-641f78071154"
+                LastKnownName="object"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="086dacda-df0f-4632-88f4-08b1e4534d05"
+            name="Prefix"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="40c3afe6-37bb-4c58-91ee-f02d76816a17"
+                LastKnownName="string"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d4f88cf3-071a-4665-9bf1-a2f8515f24d5"
+            name="OrGroup"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="40c3afe6-37bb-4c58-91ee-f02d76816a17"
+                LastKnownName="string"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="da895700-07fa-4081-ad16-a8b0eaf7c731"
+        name="objet" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a1c9af44-bdac-4884-b739-641f78071154"
+        name="object" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="40c3afe6-37bb-4c58-91ee-f02d76816a17"
+        name="string" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a9b6a3f5-5256-41e0-af29-fa55733af467"
+        name="QueryMethod" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="06d432d3-a89a-4bc3-a6be-853f0aa0c380"
+        name="QueryMethod"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="9bed7a9a-caea-4a93-b530-c7eadfc51dc8"
+            name="Equal" />
+          <enumerationLiteral
+            Id="2b95d84e-e80f-4b36-b75e-00f786f56e58"
+            name="Like" />
+          <enumerationLiteral
+            Id="808a342d-a3c1-4449-9aaa-6201c6ab4380"
+            name="GreaterThan" />
+          <enumerationLiteral
+            Id="22937fa6-5c9c-4a8c-a497-bf1b708e694d"
+            name="LessThan" />
+          <enumerationLiteral
+            Id="fbc6c3ef-f0e9-4bc0-8cb7-aa6569b37ca5"
+            name="LessThanOrEqual" />
+          <enumerationLiteral
+            Id="9751eef9-b032-4b27-9ff2-fee68e211808"
+            name="In" />
+          <enumerationLiteral
+            Id="e49e87d7-0a80-4686-a919-71281c7c6289"
+            name="GreaterThanOrEqual" />
+          <enumerationLiteral
+            Id="ea2b6101-ac78-4408-934f-99a64c051d0f"
+            name="NotEqual" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d51de2b6-324d-41a5-9ec3-34004b684092"
+        name="QueryModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="f3d6b373-08c4-4152-853f-e700b79b6728"
+            isDerived="false"
+            sourceEndRoleName="QueryModel"
+            targetEndRoleName="ConditionItem"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="805e0328-535f-4f75-ab2e-c197e7727e39"
+              LastKnownName="ConditionItem"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8965f813-e27f-4ba2-a8e5-d29c100c35dd"
+                  name="QueryModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ae5d550a-8d9a-48eb-b82b-5b2260d151cc"
+                  name="ConditionItem"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="156120c9-25b6-499f-9ffc-2d27407cacc4"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="975c2c2b-fa30-49a1-ae59-f7850c90c907"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="688e350d-24c5-4091-98d2-4a4ef5f8b078"
+            name="Items"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="7a29e30d-9b96-4479-9175-ddd26705a2b5"
+                LastKnownName="IEnumerable&lt;ConditionItem&gt;"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7a29e30d-9b96-4479-9175-ddd26705a2b5"
+        name="IEnumerable&lt;ConditionItem&gt;" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
