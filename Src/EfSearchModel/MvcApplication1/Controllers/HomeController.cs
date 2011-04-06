@@ -13,6 +13,7 @@ namespace MvcApplication1.Controllers
             using(var db=new DbEntities())
             {
                 var list = db.Users.Where(model).ToList();
+                //db.Users.Where(c => c.Id < 10 && (c.Name == "chhlgy" || c.Name == "chsword")).ToList();
                 return View(list);
             }
         }

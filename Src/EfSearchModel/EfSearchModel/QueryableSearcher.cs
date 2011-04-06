@@ -39,12 +39,17 @@
 
         public IQueryable<T> Search()
         {
-            ParameterExpression param = Expression.Parameter(typeof(T), "c");//c=>
-            var body = GetAllExpressoin(param, Items);
-            return Table.Where(Expression.Lambda<Func<T, bool>>(body, param));
+            //构建 c=>Body中的c
+            ParameterExpression param = Expression.Parameter(typeof(T), "c");
+            //构建c=>Body中的Body
+            var body = GetExpressoinBody(param, Items);
+            //将二者拼为c=>Body
+            var expression = Expression.Lambda<Func<T, bool>>(body, param);
+            //传到Where中当做参数，类型为Expression<Func<T,bool>>
+            return Table.Where(expression);
         }
 
-        private Expression GetAllExpressoin(ParameterExpression param, IEnumerable<ConditionItem> items)
+        private Expression GetExpressoinBody(ParameterExpression param, IEnumerable<ConditionItem> items)
         {
             var list = new List<Expression>();
             var andList = items.Where(c => string.IsNullOrEmpty(c.OrGroup));
