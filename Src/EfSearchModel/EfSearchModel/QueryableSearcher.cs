@@ -52,24 +52,30 @@
         private Expression GetExpressoinBody(ParameterExpression param, IEnumerable<ConditionItem> items)
         {
             var list = new List<Expression>();
+            //OrGroup为空的情况下，即为And组合
             var andList = items.Where(c => string.IsNullOrEmpty(c.OrGroup));
+            //将And的子Expression以AndAlso拼接
             if (andList.Count() != 0)
             {
                 list.Add(GetGroupExpression(param, andList, Expression.AndAlso));
             }
+            //其它的则为Or关系，不同Or组间以And分隔
             var orGroupByList = items.Where(c => !string.IsNullOrEmpty(c.OrGroup)).GroupBy(c => c.OrGroup);
-
+            //拼接子Expression的Or关系
             foreach (IGrouping<string, ConditionItem> group in orGroupByList)
             {
                 if (group.Count() != 0)
                     list.Add(GetGroupExpression(param, group, Expression.OrElse));
             }
+            //将这些Expression再以And相连
             return list.Aggregate(Expression.AndAlso);
         }
 
         private Expression GetGroupExpression(ParameterExpression param, IEnumerable<ConditionItem> items, Func<Expression, Expression, Expression> func)
         {
+            //获取最小的判断表达式
             var list = items.Select(item => GetExpression(param, item));
+            //再以逻辑运算符相连
             return list.Aggregate(func);
         }
 
@@ -77,6 +83,7 @@
         {
             //属性表达式
             LambdaExpression exp = GetPropertyLambdaExpression(item, param);
+            //如果有特殊类型处理，则进行处理，暂时不关注
             foreach (var provider in TransformProviders)
             {
                 if (provider.Match(item, exp.Body.Type))
@@ -86,11 +93,13 @@
             }
             //常量表达式
             var constant = ChangeTypeToExpression(item, exp.Body.Type);
+            //以判断符或方法连接
             return ExpressionDict[item.Method](exp.Body, constant);
         }
 
         private LambdaExpression GetPropertyLambdaExpression(ConditionItem item, ParameterExpression param)
         {
+            //获取每级属性如c.Users.Proiles.UserId
             var props = item.Field.Split('.');
             Expression propertyAccess = param;
             var typeOfProp = typeof(T);
