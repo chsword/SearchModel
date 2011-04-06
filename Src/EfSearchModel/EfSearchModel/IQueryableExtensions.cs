@@ -1,6 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="IQueryableExtensions.cs" company="Ganji.com">
-//     Copyright (c) Ganji.com . All rights reserved.
+// <copyright file="IQueryableExtensions.cs">
 // </copyright>
 // <author>Zou Jian</author>
 // <addtime>2010-09-03</addtime>
@@ -19,11 +18,11 @@ namespace EfSearchModel
     public static class QueryableExtensions
     {
         /// <summary>
-        /// zoujian add , 使IQueryable支持SearchModel
+        /// zoujian add , 使IQueryable支持QueryModel
         /// </summary>
         /// <typeparam name="TEntity"></typeparam>
         /// <param name="table">IQueryable的查询对象</param>
-        /// <param name="model">SearchModel对象</param>
+        /// <param name="model">QueryModel对象</param>
         /// <param name="prefix">使用前缀区分查询条件</param>
         /// <returns></returns>
         public static IQueryable<TEntity> Where<TEntity>(this IQueryable<TEntity> table, QueryModel model, string prefix = "") where TEntity : class

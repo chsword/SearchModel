@@ -1,6 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="QueryableExtensionsTest" company="Ganji.com">
-//     Copyright (c) Ganji.com . All rights reserved.
+// <copyright file="QueryableExtensionsTest">
 // </copyright>
 // <author>Zou Jian</author>
 // <addtime>2010-09</addtime>
