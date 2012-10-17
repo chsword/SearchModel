@@ -1,12 +1,45 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chsword.SearchModel", "Chsword.SearchModel\Chsword.SearchModel.csproj", "{E7FF8DCF-834C-440F-B54E-D203007D1994}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chsword.Web.Mvc.SearchModel", "Chsword.Web.Mvc.SearchModel\Chsword.Web.Mvc.SearchModel.csproj", "{97FCD4FA-11F8-486F-96FD-D637F8335C1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chsword.SearchModel.Test", "Chsword.SearchModel.Test\Chsword.SearchModel.Test.csproj", "{1D3A5965-5879-455B-84EA-256D42FC6331}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 1
+		SccNumberOfProjects = 4
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs05
 		SccLocalPath0 = .
+		SccProjectUniqueName1 = Chsword.SearchModel\\Chsword.SearchModel.csproj
+		SccProjectName1 = Chsword.SearchModel
+		SccLocalPath1 = Chsword.SearchModel
+		SccProjectUniqueName2 = Chsword.Web.Mvc.SearchModel\\Chsword.Web.Mvc.SearchModel.csproj
+		SccProjectName2 = Chsword.Web.Mvc.SearchModel
+		SccLocalPath2 = Chsword.Web.Mvc.SearchModel
+		SccProjectUniqueName3 = Chsword.SearchModel.Test\\Chsword.SearchModel.Test.csproj
+		SccProjectName3 = Chsword.SearchModel.Test
+		SccLocalPath3 = Chsword.SearchModel.Test
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7FF8DCF-834C-440F-B54E-D203007D1994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7FF8DCF-834C-440F-B54E-D203007D1994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7FF8DCF-834C-440F-B54E-D203007D1994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7FF8DCF-834C-440F-B54E-D203007D1994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97FCD4FA-11F8-486F-96FD-D637F8335C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97FCD4FA-11F8-486F-96FD-D637F8335C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97FCD4FA-11F8-486F-96FD-D637F8335C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97FCD4FA-11F8-486F-96FD-D637F8335C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D3A5965-5879-455B-84EA-256D42FC6331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D3A5965-5879-455B-84EA-256D42FC6331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D3A5965-5879-455B-84EA-256D42FC6331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D3A5965-5879-455B-84EA-256D42FC6331}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
