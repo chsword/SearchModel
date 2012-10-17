@@ -52,12 +52,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryableExtensionsTest.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\EfSearchModel\EfSearchModel.csproj">
-      <Project>{787DBFB5-1861-493F-8D8C-35886810445B}</Project>
-      <Name>EfSearchModel</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

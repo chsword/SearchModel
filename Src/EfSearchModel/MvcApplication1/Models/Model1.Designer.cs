@@ -8,15 +8,15 @@
 //------------------------------------------------------------------------------
 
 using System;
+using System.ComponentModel;
+using System.Data.EntityClient;
 using System.Data.Objects;
 using System.Data.Objects.DataClasses;
-using System.Data.EntityClient;
-using System.ComponentModel;
-using System.Xml.Serialization;
+using System.Linq;
 using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 [assembly: EdmSchemaAttribute()]
-
 namespace MvcApplication1.Models
 {
     #region 上下文
@@ -98,6 +98,7 @@ namespace MvcApplication1.Models
         private ObjectSet<User> _Users;
 
         #endregion
+
         #region AddTo 方法
     
         /// <summary>
@@ -117,11 +118,11 @@ namespace MvcApplication1.Models
         }
 
         #endregion
+
     }
-    
 
     #endregion
-    
+
     #region 实体
     
     /// <summary>
@@ -146,6 +147,7 @@ namespace MvcApplication1.Models
         }
 
         #endregion
+
         #region 基元属性
     
         /// <summary>
@@ -248,6 +250,7 @@ namespace MvcApplication1.Models
         partial void OnAddTimeChanged();
 
         #endregion
+
     
     }
     
@@ -273,6 +276,7 @@ namespace MvcApplication1.Models
         }
 
         #endregion
+
         #region 基元属性
     
         /// <summary>
@@ -399,9 +403,11 @@ namespace MvcApplication1.Models
         partial void OnAddTimeChanged();
 
         #endregion
+
     
     }
 
     #endregion
+
     
 }
